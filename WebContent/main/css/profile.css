@@ -1,0 +1,294 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+body {
+    background-color: rgb(249, 249, 249);
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.BigRegisterBox {
+    min-width: 1236px;
+}
+
+.mideumRegisterBox {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 100px 0px;
+}
+
+.registerBox {
+    width: 570px;
+    background: rgb(255, 255, 255);
+    padding: 60px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px 0px;
+    font-size: 14px;
+    color: rgb(30, 29, 41);
+}
+
+.information {
+    font-size: 30px;
+}
+
+.formBox {
+    margin-top: 45px;
+}
+
+.nextButton {
+    background-color: #ffb98b;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 4.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+}
+.nextButton2 {
+    background-color: #ffb98b;
+    color: rgb(255, 255, 255);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+}
+
+.nameBox {
+    margin-bottom: 1rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.passwordBox {
+    margin-bottom: 1rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.passwordCheckBox {
+    margin-bottom: 1rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.birthBox {
+    margin-bottom: 1rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.numberBox {
+    margin-bottom: 1rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+.profilezipcode {
+    margin-bottom: 1rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+.profileaddress {
+    margin-bottom: 1rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.emailBox {
+    margin-bottom: 1rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.agreeBox {
+    margin-bottom: 1rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+}
+
+.nameBoxInbox {
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+    padding: 10px;
+    border-top: 0px;
+    border-bottom: 1px solid;
+    border-right: 1px solid rgb(249, 249, 249);
+    border-left: 1px solid rgb(249, 249, 249);
+}
+
+.passwordBoxInbox {
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+    padding: 10px;
+    border-top: 0px;
+    border-bottom: 1px solid;
+    border-right: 1px solid rgb(249, 249, 249);
+    border-left: 1px solid rgb(249, 249, 249);
+}
+
+.passwordCheckBoxInbox {
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+    padding: 10px;
+    border-top: 0px;
+    border-bottom: 1px solid;
+    border-right: 1px solid rgb(249, 249, 249);
+    border-left: 1px solid rgb(249, 249, 249);
+}
+
+.birthBoxInBox {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.yearMonthDay {
+    width: 95%;
+    height: 50px;
+    padding: 10px;
+    border-top: 0px;
+    border-bottom: 1px solid;
+    border-right: 1px solid rgb(249, 249, 249);
+    border-left: 1px solid rgb(249, 249, 249);
+}
+
+.birthBar {
+    margin: 0px 0.5rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 0.5rem;
+    height: 2px;
+    background: rgb(63, 62, 75);
+    flex-shrink: 0;
+}
+
+.birthBoxInBox2 {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.gender {
+    width: 2rem;
+    text-align: center;
+    height: 50px;
+    border-top: 0px;
+    border-bottom: 1px solid;
+    border-right: 1px solid rgb(249, 249, 249);
+    border-left: 1px solid rgb(249, 249, 249);
+}
+
+.birthFixedNumber {
+    display: flex;
+    flex-direction: row;
+    margin-left: 8px;
+}
+
+.FixedNumber {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(114, 112, 127);
+    margin-right: 4px;
+}
+
+.numberBoxInbox {
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border-top: 0px;
+    border-bottom: 1px solid;
+    border-right: 1px solid rgb(249, 249, 249);
+    border-left: 1px solid rgb(249, 249, 249);
+}
+.numberBoxInbox2 {
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border-top: 0px;
+    border-bottom: 1px solid;
+    border-right: 1px solid rgb(249, 249, 249);
+    border-left: 1px solid rgb(249, 249, 249);
+}
+
+.profileInbox {
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border-top: 0px;
+    border-bottom: 1px solid;
+    border-right: 1px solid rgb(249, 249, 249);
+    border-left: 1px solid rgb(249, 249, 249);
+}
+
+.emailBoxInbox {
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border-top: 0px;
+    border-bottom: 1px solid;
+    border-right: 1px solid rgb(249, 249, 249);
+    border-left: 1px solid rgb(249, 249, 249);
+}
+
+.ico_space {
+    margin: 0px 0.5rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 15px;
+    height: 2px;
+    flex-shrink: 0;
+}
+
+.w160 {
+    width: 100%;
+    height: 50px;
+    border-top: 0px;
+    border-bottom: 1px solid;
+    border-right: 1px solid rgb(249, 249, 249);
+    border-left: 1px solid rgb(249, 249, 249);
+}

@@ -1,0 +1,633 @@
+body {
+  font-family: "Noto Sans KR", AppleSDGothicNeo, "Apple SD Gothic Neo",
+    AppleSDGothicNeo-Light, HelveticaNeue-Light, "Malgun Gothic", "맑은 고딕",
+    sans-serif;
+  color: #212529;
+  min-height: 100%;
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: block;
+  /* margin: 8px; */
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+section,
+article,
+aside,
+footer,
+header,
+nav,
+hgroup {
+  display: block;
+}
+
+.hide {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 0;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+/* !!!!!!!!!!!!Header Header부분 시작!!!!!!!!!!!!!!!!!! */
+
+#fixedBar {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.fixedBarBoxShadow {
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+#fixedBar #fixedBarWrap {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 16px 0;
+  position: relative;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  /* margin-block-start: 0.67em;
+  margin-block-end: 0.67em; */
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
+
+#fixedBar #fixedBarWrap .fixedLogo {
+  width: 120px;
+  vertical-align: text-bottom;
+  margin-bottom: 5px;
+}
+
+#fixedBar #fixedBarWrap #fixedBarSearch {
+  position: absolute;
+  left: 152px;
+  top: 16px;
+  border-radius: 5px;
+  border: solid 1px #e9ecef;
+  text-decoration: none;
+  padding: 0 1.6rem;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+#fixedBar #fixedBarWrap #fixedBarSearch .searchInputWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+#fixedBar #fixedBarWrap #fixedBarSearch .searchInputWrap .fixedSearchInput {
+  display: block;
+  width: 340px;
+  border: none;
+  font-size: 16px;
+  color: #212529;
+  background-color: transparent;
+}
+
+input {
+  font-family: "Noto Sans KR", AppleSDGothicNeo, "Apple SD Gothic Neo",
+    AppleSDGothicNeo-Light, HelveticaNeue-Light, "Malgun Gothic", "맑은 고딕",
+    sans-serif;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+#fixedBar #fixedBarWrap #fixedBarSearch .searchInputWrap .fixedSearchIcon {
+  width: 19px;
+  height: 19px;
+  fill: #868e96;
+  padding: 1rem 0;
+}
+
+#fixedBar #fixedBarWrap #fixedBarLoginRegist {
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+
+/* h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+} */
+
+#fixedBar #fixedBarWrap #fixedBarLoginRegist #headerLoginRegistButton {
+  margin-right: 8px;
+}
+
+#fixedBar #fixedBarWrap #fixedBarLoginRegist .fixedLoginRegistButton {
+  width: 140px;
+  border-radius: 5px;
+  border: solid 1px #e9ecef;
+  box-sizing: border-box;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0.9rem 0;
+}
+
+#fixedBar
+  #fixedBarWrap
+  #fixedBarLoginRegist
+  .fixedLoginRegistButton
+  .fixedLoginRegistText {
+  display: inline-block;
+  color: #495057;
+  font-size: 14px;
+  margin-left: 8px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+/* !!!!!!!!!!!!Header Header부분 끝!!!!!!!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!section section부분 시작!!!!!!!!!!!!!!!!!! */
+
+#content {
+  width: 677px;
+  margin: 100px auto 0 auto;
+}
+
+#userProfile {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#userProfile #nickname {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  margin-left: 80px;
+}
+
+#userProfile #nickname #regionName {
+  font-size: 17px;
+  color: #212529;
+  font-weight: normal;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+#userProfile #profileDetail {
+  list-style-type: none;
+  margin: 10px 0;
+  margin-left: 80px;
+}
+
+#userProfile #profileDetail .profileDetailTitle {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 15px;
+  letter-spacing: -0.6px;
+  color: #868e96;
+}
+
+li {
+  text-align: -webkit-match-parent;
+}
+
+#userProfile #profileDetail .profileDetailTitle .profileDetailCount {
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+#userProfile #profileImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#userProfile #profileImage img {
+  width: 58px;
+  height: 58px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+#userFilter {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 37px;
+}
+
+#userFilter ul {
+  list-style-type: none;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 10px;
+}
+
+#userFilter ul li {
+  display: inline-block;
+  font-size: 17px;
+}
+
+#userFilter ul li a.active {
+  border-bottom: 3px solid #f76707;
+  color: #f76707;
+  font-weight: 600;
+}
+
+#userFilter ul li a {
+  color: #868e96;
+  text-decoration: none;
+  padding: 8px 20px;
+}
+
+#userRecords {
+  position: relative;
+}
+
+.userArticles {
+  padding-top: 20px;
+}
+
+.cardsWrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cardsWrap .card {
+  width: calc(33% - 16px);
+  margin-right: 16px;
+}
+
+.cardsWrap .cardTop,
+.cardsWrap .card {
+  width: calc(32% - 40px);
+  margin-right: 44px;
+  margin-bottom: 56px;
+}
+
+.cardsWrap .cardLink {
+  text-decoration: none;
+  color: #212529;
+}
+
+.cardsWrap .cardTop .cardPhoto,
+.cardsWrap .card .cardPhoto {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.cardsWrap .card .cardPhoto img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 12px;
+  border: 1px solid transparent;
+}
+
+.cardsWrap .cardTop .cardDesc,
+.cardsWrap .card .cardDesc {
+  margin-top: 12px;
+}
+
+.cardsWrap .cardTop .cardDesc .cardTitle,
+.cardsWrap .card .cardDesc .cardTitle {
+  font-size: 16px;
+  letter-spacing: -0.02px;
+  color: #212529;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.cardsWrap .cardTop .cardDesc .cardPrice,
+.cardsWrap .card .cardDesc .cardPrice {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.cardsWrap .cardTop .cardDesc .cardRegionName,
+.cardsWrap .card .cardDesc .cardRegionName {
+  font-size: 13px;
+  color: #212529;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.cardsWrap .cardTop .cardDesc .cardCounts,
+.cardsWrap .card .cardDesc .cardCounts {
+  color: #868e96;
+  font-size: 13px;
+}
+
+.cardsWrap .cardLink {
+  text-decoration: none;
+  color: #212529;
+}
+
+/* ----------------------------- */
+
+.userReviews #reviewsList {
+  list-style-type: none;
+}
+
+.userReviews #reviewsList .review {
+  padding: 16px 0;
+  border-bottom: 1px solid #e9ecef;
+  position: relative;
+}
+
+.userReviews #reviewsList .review .reviewProfilePhoto {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.userReviews #reviewsList .review .reviewProfilePhoto img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.userReviews #reviewsList .review .reviewWriterNickname {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.47;
+  letter-spacing: -0.5px;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.userReviews #reviewsList .review .reviewWriterNickname a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.userReviews #reviewsList .review .reviewWriterRegionName {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.46;
+  letter-spacing: -0.5px;
+  vertical-align: middle;
+}
+
+.userReviews #reviewsList .review .reviewContent {
+  padding-top: 8px;
+  font-size: 15px;
+  line-height: 1.47;
+  letter-spacing: -0.5px;
+  width: calc(100% - 80px);
+}
+
+.userReviews #reviewsList .review .reviewTime {
+  display: block;
+  font-size: 13px;
+  line-height: 1.46;
+  letter-spacing: -0.5px;
+  color: #868e96;
+  margin-top: 8px;
+}
+
+/* ----------------------------- */
+
+/* ----------------------------- */
+
+#userRecords {
+  position: relative;
+}
+
+.userManners {
+  padding-bottom: 30px;
+}
+
+.userManners #mannersList {
+  counter-reset: item;
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.userManners #mannersList .manner {
+  list-style-type: none;
+  counter-increment: item;
+  position: relative;
+  padding: 16px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.userManners #mannersList .manner:before {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  content: counter(item) ".";
+}
+
+.userManners #mannersList .manner .mannerContent {
+  display: inline-block;
+  font-size: 15px;
+}
+
+.userManners #mannersList .manner .mannerCount {
+  position: absolute;
+  font-size: 15px;
+  font-weight: 600;
+  right: 0;
+  top: 16px;
+}
+
+/* ----------------------------- */
+
+/* !!!!!!!!!!!!section section부분 끝!!!!!!!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!footer footer부분 시작!!!!!!!!!!!!!!!!!! */
+
+footer {
+  background-color: #495057;
+  color: #fff;
+  padding: 8rem 0;
+  /* display: block; */
+}
+
+footer .footerContainer {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+footer .footerContainer .footerTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+footer .footerContainer .footerTop .footerLogo {
+  width: 130px;
+  height: 37px;
+  background-image: url(/assets/home/base/footer/logo-a4f4848….svg);
+  background-size: 130px 37px;
+}
+
+footer .footerContainer .footerTop .footerList {
+  list-style-type: none;
+}
+
+footer .footerContainer .footerTop .footerList .footerListItem {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+footer .footerContainer .footerTop .footerList .footerListItem .linkHighlight {
+  color: #fff;
+  font-weight: 700;
+}
+
+footer .footerContainer .footerTop .footerList .footerListItem a {
+  color: #adb5bd;
+  text-decoration: none;
+}
+
+footer .footerContainer .footerBottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 3.2rem;
+}
+
+footer .footerContainer #copyright {
+  color: #adb5bd;
+  margin-top: 3.2rem;
+}
+
+footer .footerContainer #copyright .copyrightList {
+  list-style-type: none;
+  margin-bottom: 0.4rem;
+}
+
+footer .footerContainer #copyright .copyrightList .copyrightListItem {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin-right: 0.8rem;
+}
+
+footer .footerContainer #copyright .copyrightList .copyrightListItem a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer .footerContainer #copyright .copyrightList .copyrightListItem address {
+  font-style: normal;
+}
+
+footer .footerContainer #copyright .copyrightText {
+  font-size: 1.4rem;
+  margin: 0.4rem 0;
+  color: #868e96;
+}
+
+footer .footerContainer #social {
+  margin-top: 3.2rem;
+}
+
+footer .footerContainer #social .socialList {
+  list-style-type: none;
+}
+
+footer .footerContainer #social .socialList .socialListItem {
+  display: inline-block;
+  margin-right: 2.4rem;
+}
+
+footer .footerContainer #social .socialList .socialListItem .footerSocialLink {
+  display: block;
+}
+
+footer .footerContainer #social .socialList .socialListItem:last-child {
+  margin-right: 0;
+}
+
+/* !!!!!!!!!!!!footer footer부분 끝!!!!!!!!!!!!!!!!!! */

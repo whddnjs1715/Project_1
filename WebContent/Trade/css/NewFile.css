@@ -1,0 +1,330 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding:0;
+
+
+}
+
+
+#sell_object{
+    border:1px solid black;
+    
+    width:500px;
+    height:700px;
+    
+
+}
+
+
+
+/* 중고거래 글쓰기 헤드부분*/
+.object_h{
+    padding:10px 0;
+    border-bottom:1px solid lightgrey;
+    height:40px;
+    vertical-align: middle;
+    align-items: center;
+
+}
+.oh_left{   
+    /* border:1px solid black; */
+
+    float: left;
+    margin-left:15px;
+    padding:5px 0;
+
+}
+
+.oh_right{
+    /* border:1px solid black; */
+    
+    float:right;
+    margin-top: 10px;
+    margin-right: 15px;
+    
+
+}
+
+/* input submit 부분 */
+.oh_right #b_sumit{
+	outline:none;
+	background:transparent;
+	border:none;
+	margin-top: 10px;
+	
+}
+
+/* 중고거래 글쓰기 바디부분*/
+
+.object_b{
+    width: 90%;
+    margin:0 20px;
+    
+}
+
+.photo{
+    padding:5px 0;
+}
+/* 사진 넣기 */
+.cammera{
+    padding:10px 0;
+    margin-left:10px;
+    
+}
+#b_cammera{
+    height: 70px;
+    width: 70px;
+    border:0.5px lightgray solid;
+    text-align: center;
+}
+#b_cammera:focus{
+	outline:none;
+}
+
+#b_cammera img{
+    
+    /* border: 1px solid black; */
+    height: 40px;
+    display:block;
+    padding:0;
+    margin-left:14px;
+    font-size: 0;
+}
+#b_cammera img span{
+    margin: 0;
+    padding:0;
+}
+
+/*  연동  */
+
+
+
+
+
+/* 제목 */
+.name{
+    border-top:1px solid lightgrey;
+    border-bottom:1px solid lightgrey;
+    padding:15px 0; 
+}
+.name input{
+    height: 30px;
+    border:none;
+    width: 100%;
+    
+}
+.name input:focus{
+    outline: none;
+}
+
+
+.name input::placeholder{
+    color:lightgray;
+    font-size: 15px;
+    
+}
+
+
+/* 카테고리 */
+.category{
+    height: 50px;
+    vertical-align: middle;
+    position: relative;
+    
+    
+    
+}
+.category #C_text{
+    position: absolute;
+    top:15px;  
+    width: 100%;
+    /* border:solid 1px black; */
+    text-decoration: none;
+    color:black;
+
+}
+.category #C_text span{
+    float:right;
+    padding-right: 5px;
+
+}
+
+
+
+/* 가격 */
+.price{
+    border-top:1px solid lightgrey;
+    border-bottom:1px solid lightgrey;
+    padding:15px 0; 
+}
+.price input{
+    height: 30px;
+    border:none;
+    width: 100%;
+    
+}
+.price input:focus{
+    outline: none;
+}
+.price input::placeholder{
+    color:lightgray;
+    font-size: 15px;
+    
+}
+
+/* 내용 */
+.content textarea{
+    font-size: large;
+}
+.content textarea::placeholder{
+    color:lightgray;
+}
+
+/* footer */
+.object_f{
+    padding:10px 0;
+    border-top:1px solid lightgrey;
+    height:40px;
+    vertical-align: middle;
+    align-items: center;
+
+
+}
+.of_left{   
+    /* border:1px solid black; */
+
+    float: left;
+    font-size: 15px;
+    margin-left:15px;
+    
+
+}
+
+.oh_right{
+    /* border:1px solid black; */
+    
+    float:right;
+    font-size: 13px;
+    margin-top:0px;
+
+    margin-right: 15px;
+    
+
+}
+
+
+
+/* id = "m_div"*/
+#m_div{
+	display:inline-block;
+}
+
+
+
+
+
+
+
+
+/* lightbox */
+
+#block{
+	position :fixed;
+	width:100%; height:100%;
+	top:0; bottom:0; left:0; right:0;
+	background:black;
+	opacity:0.5;
+	z-index:9;
+	display:none;
+}
+#block.active{
+	display:block;
+}
+
+
+#d_category{
+	
+	
+	
+	display:none;
+		
+}
+#d_category.active{
+	position:absolute;
+	overflow:hidden;
+	
+	
+	
+	
+	
+	margin-top: -600px;
+    margin-left: 400px;
+	
+
+	width:300px; 
+	z-index:99; 
+	background:white;
+	display:block;
+	
+}
+
+#d_category li{
+	border-bottom: 1px solid black;
+    display: block;
+    width: 100%;
+    padding: 0;
+    font-size: 0;
+	
+	
+	
+
+}
+
+
+
+
+/* d_category li button*/
+#d_category li input{
+	border:none;
+	background:none;
+	width:100%;
+	text-align: left;
+	padding-left:20px;
+	padding:9px;
+	height:inherit;
+	
+
+	
+	
+	
+}
+#d_category li input:focus{
+	outline:none;
+	background:skyblue;
+	
+}
+
+.invisible {
+	border:none;
+	border-right:0px;
+	border-top:0px;
+	boder-left:0px;
+	boder-bottom:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,700 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+section,
+article,
+aside,
+footer,
+header,
+nav,
+hgroup {
+  display: block;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.hide {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 0;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+section {
+  display: block;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  /* padding-inline-start: 40px; */
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(73, 80, 87, 0.05);
+}
+
+/* !!!!!!!!!!!!Header Header부분 시작!!!!!!!!!!!!!!!!!! */
+
+#fixedBar {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.fixedBarBoxShadow {
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+#fixedBar #fixedBarWrap {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 16px 0;
+  position: relative;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
+
+#fixedBar #fixedBarWrap .fixedLogo {
+  width: 120px;
+  vertical-align: text-bottom;
+  margin-bottom: 5px;
+}
+
+#fixedBar #fixedBarWrap #fixedBarSearch {
+  position: absolute;
+  left: 152px;
+  top: 16px;
+  border-radius: 5px;
+  border: solid 1px #e9ecef;
+  text-decoration: none;
+  padding: 0 1.6rem;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+#fixedBar #fixedBarWrap #fixedBarSearch .searchInputWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+#fixedBar #fixedBarWrap #fixedBarSearch .searchInputWrap .fixedSearchInput {
+  display: block;
+  width: 340px;
+  border: none;
+  font-size: 16px;
+  color: #212529;
+  background-color: transparent;
+}
+
+#fixedBar #fixedBarWrap #fixedBarSearch .searchInputWrap .fixedSearchIcon {
+  width: 19px;
+  height: 19px;
+  fill: #868e96;
+  padding: 1rem 0;
+}
+
+#fixedBar #fixedBarWrap #fixedBarLoginRegist {
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+
+#fixedBar #fixedBarWrap #fixedBarLoginRegist #headerLoginRegistButton {
+  margin-right: 8px;
+}
+
+#fixedBar #fixedBarWrap #fixedBarLoginRegist .fixedLoginRegistButton {
+  width: 140px;
+  border-radius: 5px;
+  border: solid 1px #e9ecef;
+  box-sizing: border-box;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0.9rem 0;
+}
+
+#fixedBar
+  #fixedBarWrap
+  #fixedBarLoginRegist
+  .fixedLoginRegistButton
+  .fixedLoginRegistText {
+  display: inline-block;
+  color: #495057;
+  font-size: 14px;
+  margin-left: 8px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+/* !!!!!!!!!!!!Header Header부분 끝!!!!!!!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!section1 section1부분 시작!!!!!!!!!!!!!!!!!! */
+
+#homeMainSectionTop {
+  margin-top: 72px;
+  padding-top: 24px;
+  background-color: #fbf7f2;
+}
+
+#homeMainSectionTop #homeMainTop {
+  width: 1024px;
+  height: 760px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fbf7f2;
+}
+
+#homeMainSectionTop .homeMainTitle {
+  font-size: 4.8rem;
+  line-height: 1.3;
+  padding-top: 27rem;
+  margin-bottom: 3.2rem;
+  letter-spacing: -0.4px;
+}
+
+#homeMainSection-top .homeMainImageTop {
+  position: absolute;
+  right: -84px;
+  bottom: 0;
+  width: 804px;
+  height: 685px;
+  background: #fbf7e7
+    /* url(https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/image-top-4eb6b8642f61c5c012136597a25a7b72c705d6c6479a7270f3fb23726fddf585.png) */
+    /* url(/images/mainImage01.png) */ no-repeat;
+  background-size: 804px 685px;
+}
+
+.mainImage01 {
+  position: absolute;
+  right: -84px;
+  bottom: 0;
+  width: 804px;
+  height: 685px;
+  background: no-repeat;
+  background-size: 804px 685px;
+}
+
+/* !!!!!!!!!!!!section1 section1부분 끝!!!!!!!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!section2 section2부분 시작!!!!!!!!!!!!!!!!!! */
+
+.homeMainSection {
+  padding: 6rem 0;
+}
+
+.homeMainSection .homeMainContent {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.homeMainSection .homeMainImage01 {
+  background-image: url(/assets/home/main/3x/image-1-39ac203….png);
+  background-size: 532px 684px;
+  width: 532px;
+  height: 684px;
+}
+
+.mainImage02 {
+  background-size: 532px 684px;
+  width: 532px;
+  height: 684px;
+}
+
+.homeMainSection .homeMainImage {
+  display: inline-block;
+}
+
+.homeMainSection .homeMainTitle {
+  font-size: 4rem;
+  line-height: 1.35;
+  margin-bottom: 2.4rem;
+}
+
+.homeMainSection .homeButtons {
+  margin-top: 3.2rem;
+}
+
+.homeMainSection .homeButtons .homeButton {
+  background-color: #f1f3f5;
+  color: #212529;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 1.45rem 2.6rem;
+  display: inline-block;
+}
+
+.textL {
+  font-size: 1.8rem !important;
+  line-height: 1.47;
+  letter-spacing: -0.3px;
+}
+
+.textBold {
+  font-weight: bold;
+}
+
+.ml3 {
+  margin-left: 1.6rem;
+}
+
+/* !!!!!!!!!!!!section2 section2부분 끝!!!!!!!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!section3 section3부분 시작!!!!!!!!!!!!!!!!!! */
+
+.backgroundPaleGreen {
+  background-color: #e6f3e6;
+}
+
+.homeMainSection .homeMainReverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.homeMainSection .homeMainImage02 {
+  background-image: url(/assets/home/main/3x/image-2-f286322….png);
+  background-size: 546px 740px;
+  width: 546px;
+  height: 740px;
+}
+
+.mainImage03 {
+  background-size: 546px 740px;
+  width: 546px;
+  height: 740px;
+}
+
+.homeMainSection .homeStoryList {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.homeMainSection .homeStoryList .homeStoryListItem {
+  margin-right: 4.6rem;
+}
+
+.homeMainSection .homeStoryList .iconStory01 {
+  background-image: url(/assets/home/main/icon-story-1-9226479….svg);
+}
+
+.homeMainSection .homeStoryList .iconStory {
+  width: 56px;
+  height: 56px;
+  background-size: 56px 56px;
+}
+
+.mainImage03-1,
+.mainImage03-2,
+.mainImage03-3 {
+  width: 56px;
+  height: 56px;
+  background-size: 56px 56px;
+}
+
+.mb2 {
+  margin-bottom: 0.8rem;
+}
+
+.mt3 {
+  margin-top: 1.6rem;
+}
+
+.textS {
+  font-size: 1.4rem !important;
+  line-height: 1.5;
+}
+
+.textXs {
+  font-size: 1.3rem !important;
+  line-height: 1.5;
+}
+
+.homeMainSection .homeStoryList .homeStoryListItem {
+  margin-right: 4.6rem;
+}
+
+.homeMainSection .homeStoryList .iconStory02 {
+  background-image: url(/assets/home/main/icon-story-2-208bb88….svg);
+}
+
+.homeMainSection .homeStoryList .homeStoryListItem:last-child {
+  margin-right: 0;
+}
+
+.homeMainSection .homeStoryList .iconStory03 {
+  background-image: url(/assets/home/main/icon-story-3-0a14d64….svg);
+}
+
+/* !!!!!!!!!!!!section3 section3부분 끝!!!!!!!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!section4 section4부분 시작!!!!!!!!!!!!!!!!!! */
+
+.homeMainSection .homeMainImage03 {
+  background-image: url(/assets/home/main/3x/image-3-0c8b631….png);
+  background-size: 526px 735px;
+  width: 526px;
+  height: 735px;
+}
+
+.mainImage04 {
+  background-size: 526px 735px;
+  width: 526px;
+  height: 735px;
+}
+
+/* !!!!!!!!!!!!section4 section4부분 끝!!!!!!!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!section5 section5부분 시작!!!!!!!!!!!!!!!!!! */
+
+.backgroundGray {
+  background-color: #f8f9fa;
+}
+
+.homeMainSection .homeHotContent {
+  width: 1024px;
+  margin: 6rem auto 12rem auto;
+}
+
+.homeMainSection .homeHotTitle {
+  margin-bottom: 8rem;
+}
+
+.homeMainSection .homeMainTitle {
+  font-size: 4rem;
+  line-height: 1.35;
+  margin-bottom: 2.4rem;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.cardsWrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cardsWrap .cardTop,
+.cardsWrap .card {
+  width: calc(25% - 44px);
+  margin-right: 44px;
+  margin-bottom: 56px;
+}
+
+.cardsWrap .cardLink {
+  text-decoration: none;
+  color: #212529;
+}
+
+.cardsWrap .cardTop .cardPhoto,
+.cardsWrap .card .cardPhoto {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.cardsWrap .cardTop .cardPhoto img,
+.cardsWrap .card .cardPhoto img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 12px;
+  border: 1px solid transparent;
+}
+
+.cardsWrap .cardTop .cardDesc,
+.cardsWrap .card .cardDesc {
+  margin-top: 12px;
+}
+
+.cardsWrap .cardTop .cardDesc .cardTitle,
+.cardsWrap .card .cardDesc .cardTitle {
+  font-size: 16px;
+  letter-spacing: -0.02px;
+  color: #212529;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.cardsWrap .cardTop .cardDesc .cardPrice,
+.cardsWrap .card .cardDesc .cardPrice {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.cardsWrap .cardTop .cardDesc .cardRegionName,
+.cardsWrap .card .cardDesc .cardRegionName {
+  font-size: 13px;
+  color: #212529;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.cardsWrap .cardTop .cardDesc .cardCounts,
+.cardsWrap .card .cardDesc .cardCounts {
+  color: #868e96;
+  font-size: 13px;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.textBlack {
+  color: #212529;
+}
+
+/* !!!!!!!!!!!!section5 section5부분 끝!!!!!!!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!section6 section6부분 시작!!!!!!!!!!!!!!!!!! */
+
+.homeKeywordsContent {
+  width: 1024px;
+  margin: 4rem auto;
+}
+
+.homeKeywordsContent .homeMainTitle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.textM {
+  font-size: 1.6rem !important;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+}
+
+.textBlack {
+  color: #212529;
+}
+
+.textBold {
+  font-weight: bold;
+}
+
+.homeKeywordsContent .topKeywordsList {
+  display: inline-block;
+  list-style-type: none;
+  vertical-align: middle;
+  margin-left: 4rem;
+}
+
+.homeKeywordsContent .topKeywordsList .keywordItem {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3.2rem;
+}
+
+.homeKeywordsContent .topKeywordsList .keywordItem .keywordLink {
+  text-decoration: none;
+  color: #212529;
+}
+
+.homeKeywordsContent .topKeywordsList .keywordItem:last-child {
+  margin-right: 0;
+}
+
+/* !!!!!!!!!!!!section6 section6부분 끝!!!!!!!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!footer footer부분 시작!!!!!!!!!!!!!!!!!! */
+
+footer {
+  background-color: #495057;
+  color: #fff;
+  padding: 8rem 0;
+  display: block;
+}
+
+footer .footerContainer {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+footer .footerContainer .footerTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+footer .footerContainer .footerTop .footerLogo {
+  width: 130px;
+  height: 37px;
+  background-image: url(/assets/home/base/footer/logo-a4f4848….svg);
+  background-size: 130px 37px;
+}
+
+footer .footerContainer .footerTop .footerList {
+  list-style-type: none;
+}
+
+footer .footerContainer .footerTop .footerList .footerListItem {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+footer .footerContainer .footerTop .footerList .footerListItem .linkHighlight {
+  color: #fff;
+  font-weight: 700;
+}
+
+footer .footerContainer .footerTop .footerList .footerListItem a {
+  color: #adb5bd;
+  text-decoration: none;
+}
+
+footer .footerContainer .footerBottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 3.2rem;
+}
+
+footer .footerContainer #copyright {
+  color: #adb5bd;
+  margin-top: 3.2rem;
+}
+
+footer .footerContainer #copyright .copyrightList {
+  list-style-type: none;
+  margin-bottom: 0.4rem;
+}
+
+footer .footerContainer #copyright .copyrightList .copyrightListItem {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin-right: 0.8rem;
+}
+
+footer .footerContainer #copyright .copyrightList .copyrightListItem a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer .footerContainer #copyright .copyrightList .copyrightListItem address {
+  font-style: normal;
+}
+
+footer .footerContainer #copyright .copyrightText {
+  font-size: 1.4rem;
+  margin: 0.4rem 0;
+  color: #868e96;
+}
+
+footer .footerContainer #social {
+  margin-top: 3.2rem;
+}
+
+footer .footerContainer #social .socialList {
+  list-style-type: none;
+}
+
+footer .footerContainer #social .socialList .socialListItem {
+  display: inline-block;
+  margin-right: 2.4rem;
+}
+
+footer .footerContainer #social .socialList .socialListItem .footerSocialLink {
+  display: block;
+}
+
+footer .footerContainer #social .socialList .socialListItem:last-child {
+  margin-right: 0;
+}
+
+/* !!!!!!!!!!!!footer footer부분 끝!!!!!!!!!!!!!!!!!! */

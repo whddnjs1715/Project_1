@@ -1,0 +1,400 @@
+@charset "UTF-8";
+/* line 24, app/assets/stylesheets/home/common.scss */
+* {
+margin: 0;
+padding: 0;
+}
+
+/* line 29, app/assets/stylesheets/home/common.scss */
+html {
+min-width: 980px;
+height: 100%;
+font-size: 62.5%;
+}
+
+/* line 35, app/assets/stylesheets/home/common.scss */
+body {
+font-family: "Noto Sans KR", AppleSDGothicNeo, "Apple SD Gothic Neo", AppleSDGothicNeo-Light, HelveticaNeue-Light, "Malgun Gothic", "맑은 고딕", sans-serif;
+min-height: calc(100% - 77px);
+position: relative;
+}
+
+/* line 41, app/assets/stylesheets/home/common.scss */
+h3 {
+font-size: 32px;
+font-weight: 600;
+letter-spacing: -0.6px;
+color: #212529;
+text-align: center;
+margin-bottom: 40px;
+}
+
+/* line 49, app/assets/stylesheets/home/common.scss */
+.clear {
+clear: both;
+}
+
+/* line 53, app/assets/stylesheets/home/common.scss */
+.hide {
+position: absolute;
+left: -9999px;
+top: -9999px;
+}
+
+/* line 58, app/assets/stylesheets/home/common.scss */
+.sr-only {
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0 0 0 0);
+border: 0;
+}
+
+/* line 69, app/assets/stylesheets/home/common.scss */
+#town-banner {
+text-align: left;
+padding: 48px 0;
+background-color: #FFF4EE;
+}
+
+/* line 73, app/assets/stylesheets/home/common.scss */
+#town-banner #town-banner-wrap {
+position: relative;
+width: 980px;
+margin: 0 auto;
+}
+
+/* line 77, app/assets/stylesheets/home/common.scss */
+#town-banner #town-banner-wrap .town-logo {
+width: 154px;
+display: block;
+margin-bottom: 10px;
+}
+
+/* line 82, app/assets/stylesheets/home/common.scss */
+#town-banner #town-banner-wrap .town-banner-desc {
+color: #212529;
+font-size: 24px;
+font-weight: 700;
+line-height: 1.6;
+margin-bottom: 12px;
+}
+
+/* line 89, app/assets/stylesheets/home/common.scss */
+#town-banner #town-banner-wrap .town-link-button {
+display: block;
+text-align: center;
+background-color: #FF8A3D;
+width: 240px;
+padding: 14px 0;
+font-size: 18px;
+font-weight: 600;
+color: #fff;
+text-decoration: none;
+border-radius: 6px;
+}
+
+/* line 103, app/assets/stylesheets/home/common.scss */
+#town-banner #town-banner-wrap .town-illust {
+position: absolute;
+bottom: 8px;
+right: 30px;
+width: 322px;
+}
+
+/* line 112, app/assets/stylesheets/home/common.scss */
+#introduction {
+text-align: center;
+padding-top: 120px;
+padding-bottom: 20px;
+background-color: #f8f9fa;
+}
+
+/* line 117, app/assets/stylesheets/home/common.scss */
+#introduction #introduction-wrap {
+width: 980px;
+margin: 0 auto;
+}
+
+/* line 121, app/assets/stylesheets/home/common.scss */
+#introduction .introduction-detail {
+display: inline-block;
+margin-right: 138px;
+margin-bottom: 100px;
+}
+
+/* line 125, app/assets/stylesheets/home/common.scss */
+#introduction .introduction-detail .introduction-title {
+margin-top: 32px;
+font-size: 22px;
+font-weight: 600;
+line-height: 1.6;
+letter-spacing: -0.6px;
+text-align: center;
+}
+
+/* line 133, app/assets/stylesheets/home/common.scss */
+#introduction .introduction-detail .introduction-desc {
+margin-top: 6px;
+font-size: 17px;
+line-height: 1.59;
+letter-spacing: -1.2px;
+text-align: center;
+color: #495057;
+}
+
+/* line 142, app/assets/stylesheets/home/common.scss */
+#introduction .introduction-detail:nth-child(3n) {
+margin-right: 0;
+}
+
+/* line 147, app/assets/stylesheets/home/common.scss */
+.home-chatting,
+.home-checkin,
+.home-notification,
+.home-share,
+.home-temperature,
+.home-thanks,
+.home-logo,
+.home-icon-add:hover,
+.home-icon-add,
+.home-icon-quotation {
+display: inline-block;
+background: url(/assets/home/base/icon-set-50e8f0ea464db3f581f26893911142973cff6fedc7c2c917725338ddd47f5648.png) no-repeat;
+overflow: hidden;
+text-indent: -9999px;
+text-align: left;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+/* line 167, app/assets/stylesheets/home/common.scss */
+.home-chatting,
+.home-checkin,
+.home-notification,
+.home-share,
+.home-temperature,
+.home-thanks,
+.home-logo,
+.home-icon-add:hover,
+.home-icon-add,
+.home-icon-quotation {
+background: url(/assets/home/base/icon-set@2x-f3a71226a57dc10686a03d9336d94ae48731c6400f91d585711e3cb0ea553c78.png) no-repeat;
+background-size: 230px 1417px;
+}
+/* line 180, app/assets/stylesheets/home/common.scss */
+#header-top #header-title-wrap #header-image {
+background-image: url(/assets/home/base/phone@2x-9611a35b152568b8a6c1deaff4b665668e3350c62382eccfaf496e974cef5d50.png);
+}
+}
+
+/* line 185, app/assets/stylesheets/home/common.scss */
+.home-checkin {
+background-position: -0px -0px;
+width: 230px;
+height: 230px;
+}
+
+/* line 186, app/assets/stylesheets/home/common.scss */
+.home-temperature {
+background-position: -0px -230px;
+width: 230px;
+height: 230px;
+}
+
+/* line 187, app/assets/stylesheets/home/common.scss */
+.home-chatting {
+background-position: -0px -460px;
+width: 230px;
+height: 230px;
+}
+
+/* line 188, app/assets/stylesheets/home/common.scss */
+.home-notification {
+background-position: -0px -690px;
+width: 230px;
+height: 230px;
+}
+
+/* line 189, app/assets/stylesheets/home/common.scss */
+.home-share {
+background-position: -0px -920px;
+width: 230px;
+height: 230px;
+}
+
+/* line 190, app/assets/stylesheets/home/common.scss */
+.home-thanks {
+background-position: -0px -1150px;
+width: 230px;
+height: 230px;
+}
+
+/* line 191, app/assets/stylesheets/home/common.scss */
+.home-logo {
+background-position: -0px -1380px;
+width: 123px;
+height: 37px;
+}
+
+/* line 192, app/assets/stylesheets/home/common.scss */
+.home-icon-add-hover {
+background-position: -123px -1380px;
+width: 25px;
+height: 24px;
+}
+
+/* line 193, app/assets/stylesheets/home/common.scss */
+.home-icon-add {
+background-position: -148px -1380px;
+width: 24px;
+height: 24px;
+}
+
+/* line 194, app/assets/stylesheets/home/common.scss */
+.home-icon-quotation {
+background-position: -172px -1380px;
+width: 16px;
+height: 15px;
+}
+/* line 7, app/assets/stylesheets/home/footer.scss */
+footer {
+background-color: #495057;
+color: #fff;
+padding: 8rem 0;
+}
+
+/* line 11, app/assets/stylesheets/home/footer.scss */
+footer .footer-container {
+width: 1024px;
+margin: 0 auto;
+}
+
+/* line 14, app/assets/stylesheets/home/footer.scss */
+footer .footer-container .footer-top {
+display: flex;
+justify-content: space-between;
+margin-bottom: 4rem;
+}
+
+/* line 18, app/assets/stylesheets/home/footer.scss */
+footer .footer-container .footer-top .footer-logo {
+width: 130px;
+height: 37px;
+background-image: url(/assets/home/base/footer/logo-a4f4848ffd1d5fcb13d1d3ecf82ffbc77c31ebe226f67097386497a34638c059.svg);
+background-size: 130px 37px;
+}
+
+/* line 24, app/assets/stylesheets/home/footer.scss */
+footer .footer-container .footer-top .footer-list {
+list-style-type: none;
+}
+
+/* line 26, app/assets/stylesheets/home/footer.scss */
+footer .footer-container .footer-top .footer-list .footer-list-item {
+display: block;
+font-size: 1.6rem;
+margin-bottom: 1.6rem;
+}
+
+/* line 30, app/assets/stylesheets/home/footer.scss */
+footer .footer-container .footer-top .footer-list .footer-list-item a {
+color: #ADB5BD;
+text-decoration: none;
+}
+
+/* line 33, app/assets/stylesheets/home/footer.scss */
+footer .footer-container .footer-top .footer-list .footer-list-item a:hover {
+text-decoration: underline;
+}
+
+/* line 37, app/assets/stylesheets/home/footer.scss */
+footer .footer-container .footer-top .footer-list .footer-list-item .link-highlight {
+color: #fff;
+font-weight: 700;
+}
+
+/* line 44, app/assets/stylesheets/home/footer.scss */
+footer .footer-container .footer-bottom {
+display: flex;
+justify-content: space-between;
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+margin-top: 3.2rem;
+}
+
+/* line 50, app/assets/stylesheets/home/footer.scss */
+footer .footer-container #copyright {
+color: #ADB5BD;
+margin-top: 3.2rem;
+}
+
+/* line 53, app/assets/stylesheets/home/footer.scss */
+footer .footer-container #copyright .copyright-list {
+list-style-type: none;
+margin-bottom: 0.4rem;
+}
+
+/* line 56, app/assets/stylesheets/home/footer.scss */
+footer .footer-container #copyright .copyright-list .copyright-list-item {
+display: inline-block;
+font-size: 1.4rem;
+margin-right: 0.8rem;
+}
+
+/* line 60, app/assets/stylesheets/home/footer.scss */
+footer .footer-container #copyright .copyright-list .copyright-list-item address {
+font-style: normal;
+}
+
+/* line 63, app/assets/stylesheets/home/footer.scss */
+footer .footer-container #copyright .copyright-list .copyright-list-item a {
+color: inherit;
+text-decoration: none;
+color: #868e96;
+}
+
+/* line 67, app/assets/stylesheets/home/footer.scss */
+footer .footer-container #copyright .copyright-list .copyright-list-item a:hover {
+text-decoration: underline;
+}
+
+/* line 73, app/assets/stylesheets/home/footer.scss */
+footer .footer-container #copyright .copyright-list-light {
+margin-top: 1.6rem;
+color: #868e96;
+}
+
+/* line 77, app/assets/stylesheets/home/footer.scss */
+footer .footer-container #copyright .copyright-text {
+font-size: 1.4rem;
+margin: 0.4rem 0;
+color: #868e96;
+}
+
+/* line 83, app/assets/stylesheets/home/footer.scss */
+footer .footer-container #social {
+margin-top: 3.2rem;
+}
+
+/* line 85, app/assets/stylesheets/home/footer.scss */
+footer .footer-container #social .social-list {
+list-style-type: none;
+}
+
+/* line 87, app/assets/stylesheets/home/footer.scss */
+footer .footer-container #social .social-list .social-list-item {
+display: inline-block;
+margin-right: 2.4rem;
+}
+
+/* line 90, app/assets/stylesheets/home/footer.scss */
+footer .footer-container #social .social-list .social-list-item .footer-social-link {
+display: block;
+}
+
+/* line 93, app/assets/stylesheets/home/footer.scss */
+footer .footer-container #social .social-list .social-list-item:last-child {
+margin-right: 0;
+}
