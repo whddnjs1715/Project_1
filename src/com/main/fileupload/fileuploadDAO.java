@@ -59,7 +59,6 @@ public class fileuploadDAO {
 		return null;
 	}
 	
-	//start媛�(idx)�쓣 諛쏆븘 �빐�떦 idx�뿉 �빐�떦�븯�뒗 �뒠�뵆 �젙蹂� 由ъ뒪�듃�뿉 ���옣 (�썝�옒�뒗 email濡� �뿰寃고빐�꽌 �빐�빞�븷 寃� 媛숈쓬?) 
 	public List<fileuploadDTO> selectList(int start){
 		List<fileuploadDTO> fileList = new ArrayList();
 		Connection conn = null;
@@ -96,7 +95,6 @@ public class fileuploadDAO {
 	}
 	
 
-	//紐⑤뱺 �긽�뭹 �벑濡� 湲� 由ъ뒪�듃�뿉 �꽔湲곗씤 寃� 媛숈쓬
 	public List<fileuploadDTO> selectListAll(){
 		List<fileuploadDTO> fileList = new ArrayList();
 		Connection conn = null;
@@ -133,7 +131,7 @@ public class fileuploadDAO {
 		return fileList;
 	}
 	
-	//�궎�썙�뱶媛� �룷�븿�맂 寃뚯떆湲��뱾 由ъ뒪�듃
+
 	public List<fileuploadDTO> selectListAll(String keyWord){
 		List<fileuploadDTO> fileList = new ArrayList();
 		Connection conn = null;
@@ -143,8 +141,7 @@ public class fileuploadDAO {
 			conn = DBconn.getConnection();
 			StringBuffer query = new StringBuffer();
 		
-			//�궎�썙�뱶媛� �엳嫄곕굹 諛붾줈 �뿏�꽣瑜� �늻瑜댁� �븡�븯�떎硫�
-			//湲� �젣紐⑹뿉留� �궎�썙�뱶媛� �엳�뒗 寃쎌슦�쓽 sql臾몄씠�뿬�꽌 fu_comment�뿉�룄 �궎�썙�뱶媛� �엳�뒗 寃쎌슦 異붽��븿
+	
 			if(keyWord!=null && !keyWord.equals("")) {
 				query.append("SELECT * FROM tb_fileupload WHERE fu_name LIKE ? ORDER BY fu_idx DESC");
 				pstmt = conn.prepareStatement(query.toString());
@@ -152,7 +149,6 @@ public class fileuploadDAO {
 				rs = pstmt.executeQuery();
 
 			}else{
-				//�궎�썙�뱶 �뾾�씠 洹몃깷 寃��깋�뻼�떎硫�
 				query.append("SELECT * FROM tb_fileupload ORDER BY fu_idx DESC");
 				pstmt = conn.prepareStatement(query.toString());
 
@@ -184,7 +180,6 @@ public class fileuploadDAO {
 		return fileList;
 	}
 	
-	//吏��뿭 + �궎�썙�뱶濡� 寃��깋�떆
 	public List<fileuploadDTO> selectListAll(String S_location, String keyWord){
 		List<fileuploadDTO> fileList = new ArrayList();
 		Connection conn = null;
@@ -233,8 +228,6 @@ public class fileuploadDAO {
 	}
 	
 	
-	//idx 由ъ뒪�듃
-	//�궗�슜 �슜�룄 �씠�빐 �븘吏� 紐삵븿
 	public List<fileuploadidxDTO> selectListidx(){
 		List<fileuploadidxDTO> fileidxList = new ArrayList();
 		Connection conn = null;
@@ -262,8 +255,6 @@ public class fileuploadDAO {
 		return fileidxList;
 	}
 
-	//移댁슫�듃
-	//�궗�슜�슜�룄 �븘吏� �씠�빐 紐삵븿
 	public int countColumn(){
 		int count=0;
 		Connection conn = null;
@@ -287,10 +278,7 @@ public class fileuploadDAO {
        
         return count;
     }
-	
-	
-	//寃��깋
-	//comment�뿉 寃��깋 �궎�썙�뱶媛� �엳�쓣 �떆�뿉�룄 sql �옉�꽦�빐�꽌 由ъ뒪�듃�뿉 �뿰寃곗떆耳쒖빞 �븿.(異붽� �셿猷�)
+
 	public List<fileuploadDTO> searchtAllList(String keyWord){
 		List<fileuploadDTO> fileList = new ArrayList();
 		Connection conn = null;
@@ -334,8 +322,6 @@ public class fileuploadDAO {
 	}
 	
 	
-
-	//�궘�젣 //id �빐�떦 �궘�젣�삁�젙 肄붾뱶
 	//
 	public int deleteList(String id){
 		DBconn db = new DBconn();

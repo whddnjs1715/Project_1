@@ -6,7 +6,7 @@ import java.util.Calendar;
 
 public class FileService {
 	private fileuploadDAO fuploadDAO = null;
-	//public static String SAVE_PATH="C:/workspace/JSP/Project/upload"; //경로 변경해줘야 할듯함.
+
 	
 	public FileService() {
 		fuploadDAO = new fileuploadDAO();
@@ -36,7 +36,6 @@ public class FileService {
 		}
 	}
 	
-	//이 메소드가 어디에 쓰이는지 이해 못했음.
 	public boolean fileUploadidx(String name, String category,  int price, String comment, String uploadpath, String filename1, String filepath) {	
 		fileuploadDTO fileuploadDTO = new fileuploadDTO();
 		
@@ -77,7 +76,6 @@ public class FileService {
 	}
 	
 	
-	파일명 날짜 포함해서 하는 곳인듯
 	public void moveFile(fileuploadDTO fileuploadDTO, File file) {
 		File dir = new File(SAVE_PATH + "/" +getToday());
 		if(!dir.isDirectory()) {

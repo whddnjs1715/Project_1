@@ -10,9 +10,9 @@ public class Dbconn {
 		
 		try {
 			String sql = "";
-			String url = "jdbc:mysql://127.0.0.1:3306/webdev";
-			String uid = "root";
-			String upw = "sksl8866955";
+			String url = "url";
+			String uid = "uid";
+			String upw = "pw";
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(url, uid, upw);
 		}catch(ClassNotFoundException e) {

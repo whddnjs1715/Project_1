@@ -16,7 +16,6 @@ public class fileuploadDTO {
 	private String filename5;
 	private String filepath;
 	private String email;
-	//private String uploadpath; �닔�젙 �쟾�뿉 �엳�뿀�쓬 寃뚰꽣�꽭�꽣�옉 �븿猿�
 	
 	
 	public String getEmail() {
